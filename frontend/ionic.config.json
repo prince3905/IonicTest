@@ -1,0 +1,7 @@
+{
+  "name": "curd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
