@@ -2,8 +2,9 @@ const User = require('../model/user');
 
 const createUser = async (req, res) => {
   try {
-    const { id, name, gender, country } = req.body;
-    const user = new User({ id, name, gender, country });
+    const { id, name, gender, country, profile } = req.body;
+    console.log(req.body)
+    const user = new User({ id, name, gender, country, profile });
     await user.save();
     res.status(201).json(user);
   } catch (error) {

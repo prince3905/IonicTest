@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
   private baseUrl = 'http://localhost:3000/api';
+   private BaseUrl = 'https://randomuser.me/api/';
   constructor(private http: HttpClient) {}
 
   getAllUsers(): Observable<any[]> {
@@ -21,5 +22,15 @@ export class UserService {
 
   addUser(data: any){
     return this.http.post(`${this.baseUrl}/users`, data);
+  }
+
+
+
+
+
+
+
+   getRandomUser(): Observable<any> {
+    return this.http.get<any>(this.BaseUrl);
   }
 }
