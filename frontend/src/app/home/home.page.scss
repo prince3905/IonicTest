@@ -28,9 +28,9 @@
 
 .fetch {
   width: 100%;
-    height: 90px;
-    position: absolute;
-    margin-top: -24%;
+  height: 90px;
+  position: fixed;
+  margin-top: -35%;
 }
 
 .userDiv{
@@ -45,4 +45,9 @@
 
 img {
   border-radius: 50%;
+}
+
+.Swiper{
+ border-radius: 10px;
+ width: 90%;
 }

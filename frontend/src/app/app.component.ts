@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, subscribeOn } from 'rxjs';
 import { UserService } from 'src/service/user.service';
+import { register } from 'swiper/element/bundle';
+
+register();
 
 @Component({
   selector: 'app-root',

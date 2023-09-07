@@ -8,6 +8,7 @@ import { UserService } from 'src/service/user.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+  
   users: any[] = [];
 
   showAlert = false;
